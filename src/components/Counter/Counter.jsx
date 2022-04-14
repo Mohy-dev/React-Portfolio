@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Button from "./CounterActions";
 import "./Counter.css";
+import second from "../../../src/Redux";
 
 function Counter() {
   const [count, setCount] = useState(12);

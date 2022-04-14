@@ -29,13 +29,14 @@ const ProductDetails = () => {
           <Card.Title className="h6 text-center">{product.title}</Card.Title>
           <ReactStars
             classNames="m-auto"
-            size={30}
+            size={50}
             value={product.rating.rate}
             edit={false}
           />
           <Card.Text
             title={product.description}
             className="text-secondary text-center"
+            class="text-justify"
           >
             {product.description}
           </Card.Text>

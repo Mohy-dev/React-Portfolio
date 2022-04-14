@@ -1,0 +1,17 @@
+video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .video-responsive iframe {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+  }
+  
+  .App{
+    margin:10rem;
+    margin-left: 29.55rem;
+  }

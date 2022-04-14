@@ -3,6 +3,7 @@ import { Button, Card, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./css/ProductDetails.css";
 import ReactStars from "react-rating-stars-component";
+import "./css/Shop.css";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -16,14 +17,15 @@ const Products = () => {
   }, []);
 
   return products?.length ? (
-    <div class="container">
-      <Row xs={1} sm={2} md={3} lg={4} className="g-4 p-4">
+    <div class="container-fluid">
+      <Row xs={1} sm={2} md={3} lg={5} className="g-4 p-4">
         {products.map((product) => (
           <Col>
             <Card key={product.id}>
               <Card.Img
-                className="m-auto fixed-size mt-2"
+                className="m-auto mt-2"
                 variant="top"
+                size={20}
                 src={product.image}
               />
               <Card.Body>
@@ -32,7 +34,7 @@ const Products = () => {
                 </Card.Title>
                 <ReactStars
                   classNames="m-auto"
-                  size={30}
+                  size={35}
                   value={product.rating.rate}
                   edit={false}
                 />
@@ -44,7 +46,7 @@ const Products = () => {
                 </Card.Text>
                 <div className="text-center">
                   <Link to={`/products/${product.id}`}>
-                    <Button variant="danger">Product Info</Button>
+                    <Button variant="primary">Product Info</Button>
                   </Link>
                 </div>
               </Card.Body>

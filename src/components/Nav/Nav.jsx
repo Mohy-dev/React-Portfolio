@@ -1,11 +1,23 @@
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/source.gif";
 
 const Nav = () => {
   return (
-    <div className="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div className="navbar navbar-expand-lg navbar-dark bg-black">
       <div className="container-fluid">
-        <Link to={"/"} className="nav-link text-black h4">
-          React-Portfolio
+        <Link
+          to={"/"}
+          class="row justify-content-center align-items-center"
+          className="nav-item text-black h4"
+        >
+          <div class="col">
+            <img id="logo" src={logo} alt="Loading...." />
+          </div>
+          <div class="font-weight-bold">
+            <span class="text-light font-weight-bold text-decoration-none">
+              React-Portfolio
+            </span>
+          </div>
         </Link>
 
         <div className="collapse navbar-collapse">
@@ -19,6 +31,11 @@ const Nav = () => {
             <li className="nav-item">
               <Link to={"/counter"} className="nav-link">
                 Counter
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to={"/todo"} className="nav-link">
+                Todo List
               </Link>
             </li>
             <li className="nav-item d-flex flex-reverse">

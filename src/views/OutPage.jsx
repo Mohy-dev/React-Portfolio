@@ -3,7 +3,7 @@ import "./css/OutPage.css";
 
 function OutPage() {
   return (
-    <a>
+    <>
       <header class="top-header"></header>
 
       <div>
@@ -38,7 +38,7 @@ function OutPage() {
           </div>
         </div>
       </section>
-    </a>
+    </>
   );
 }
 
