@@ -39,6 +39,11 @@ const Nav = () => {
               </Link>
             </li>
             <li className="nav-item d-flex flex-reverse">
+              <Link to={"/Form"} className="nav-link">
+                User Form
+              </Link>
+            </li>
+            <li className="nav-item d-flex flex-reverse">
               <Link to={"/about"} className="nav-link">
                 About
               </Link>

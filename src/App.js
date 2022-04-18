@@ -6,6 +6,7 @@ import Home from "./views/Home";
 import ProductDetails from "./views/ProductDetails";
 import Nav from "./components/Nav/Nav";
 import Products from "./views/Shop";
+import UserForm from "./views/Form";
 import About from "./views/About";
 import OutPage from "./views/OutPage";
 import ToDo from "./views/ToDo";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/counter" element={<CounterContainer />} />
+          <Route path="/form" element={<UserForm />} />
           <Route path="/about" element={<About />} />
           <Route path="/todo" element={<ToDo />} />
           <Route path="*" element={<OutPage />} />

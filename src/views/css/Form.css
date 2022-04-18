@@ -1,0 +1,12 @@
+user-form{
+    height: 50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px white;
+}
+
+#formHere{
+    margin-top:10rem;
+    border: 3px white;
+}
