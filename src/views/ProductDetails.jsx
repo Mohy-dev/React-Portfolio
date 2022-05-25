@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import ReactStars from "react-rating-stars-component";
-import "./css/ProductDetails.css";
 import { Button, Card, ListGroup, ListGroupItem } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import ReactStars from "react-rating-stars-component";
+import "./css/ProductDetails.css";
 
 const ProductDetails = () => {
   const params = useParams();
@@ -13,12 +13,17 @@ const ProductDetails = () => {
       .then((response) => response.json())
       .then((product) => setProduct(product));
   }
+
   useEffect(() => {
     fetchProduct();
   }, []);
 
+  const mystyle = {
+  overflowY: "scroll",
+};
   return product ? (
-    <div class="container mt-3">
+    
+    <div class="container mt-3" style={mystyle}>
       <Card className="w-50 m-auto mt-4">
         <Card.Img
           className="m-auto fixed-size mt-2"

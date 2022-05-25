@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../../views/css/ToDo.css";
 import { useDispatch } from "react-redux";
 import { addToDo } from "../../Redux";
+import "../../views/css/ToDo.css";
 
 function ToDoForm() {
   const [title, setTitle] = useState("");
@@ -24,23 +24,28 @@ function ToDoForm() {
   };
 
   return (
-    <div>
+    <div className="border m-3 p-2">
       <h3 className="text-muted mb-4">Add a TODO</h3>
 
       <form onSubmit={resetSubmission}>
-        Title <br />
+        <div className="text-white">Title</div>
+        <br />
         <input
           type="text"
           name="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
+          className="bg-white"
+          required
         />
         <br />
-        Content <br />
+        <div className="text-white mt-2">Content</div>
+        <br />
         <textarea
           name="content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
+          required
         ></textarea>
         <br />
         <button className="my-4 btn btn-primary btn-sm px-4" type="submit">

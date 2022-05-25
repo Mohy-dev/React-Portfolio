@@ -7,7 +7,7 @@ function ToDoList({ toDos, deleteToDo }) {
         return (
           <ul key={i}>
             <li className="border d-flex">
-              <div className="text">
+              <div className="text-white m-2">
                 <p>Index : {i}</p>
                 <p>Title : {todo.title}</p>
                 <p>Content : {todo.content}</p>
