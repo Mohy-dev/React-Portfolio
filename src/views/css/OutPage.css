@@ -11,11 +11,6 @@
   -webkit-text-size-adjust: none;
 }
 
-html, body {
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -482,7 +477,7 @@ button {
   }
 }
 @media (max-width: 750px) {
-  body, html, {
+  body, html {
     max-height: 100vh;
   }
    .error__content {
