@@ -18,12 +18,9 @@ const ProductDetails = () => {
     fetchProduct();
   }, []);
 
-  const mystyle = {
-  overflowY: "scroll",
-};
   return product ? (
     
-    <div class="container mt-3" style={mystyle}>
+    <div class="container mt-3">
       <Card className="w-50 m-auto mt-4">
         <Card.Img
           className="m-auto fixed-size mt-2"
