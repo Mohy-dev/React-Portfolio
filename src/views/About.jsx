@@ -37,7 +37,7 @@ function About() {
                 <h6>HTML</h6>
               </div>
               <div class="p-3 bg-danger text-center skill-block">
-                <h6>PHP</h6>
+                <h6>JavaScript</h6>
               </div>
             </div>
           </div>
